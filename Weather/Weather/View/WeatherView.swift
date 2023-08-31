@@ -117,7 +117,7 @@ extension WeatherView{
                 Text("Five Day Forecast")
                     .font(.title.bold())
                     .transition(.move(edge: .trailing))
-                    .animation(.easeInOut(duration: 1))
+                    .animation(.easeInOut(duration: 1), value: slideleft)
             } else{
                     Text("Five Day Forecast")
                         .font(.title.bold())
@@ -127,7 +127,7 @@ extension WeatherView{
             if slideup == true {
                 FiveDayForecast
                     .transition(.move(edge: .bottom))
-                    .animation(.easeInOut(duration: 1))
+                    .animation(.easeInOut(duration: 1), value: slideup)
             }
             else {
                 FiveDayForecast
